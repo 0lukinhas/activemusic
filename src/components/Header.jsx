@@ -37,6 +37,9 @@ const Header = () => {
               BOOKING
             </a>
             <div className="flex items-center gap-6 ml-4 border-l border-zinc-800 pl-6">
+              <a href="mailto:umprlucas@gmail.com" className="text-zinc-400 hover:text-white transition-colors hover:scale-110 transform">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
               <a href="https://www.instagram.com/activ.ebr/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors hover:scale-110 transform">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
@@ -49,12 +52,20 @@ const Header = () => {
             </div>
           </nav>
 
-          <button 
-            className="md:hidden text-zinc-300 hover:text-white transition-colors"
-            onClick={() => setIsOpen(true)}
-          >
-            <Menu size={28} />
-          </button>
+          <div className="flex items-center gap-5 md:hidden">
+            <a href="mailto:umprlucas@gmail.com" className="text-zinc-300 hover:text-electric transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://www.instagram.com/activ.ebr/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-electric transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <button 
+              className="text-zinc-300 hover:text-white transition-colors ml-1"
+              onClick={() => setIsOpen(true)}
+            >
+              <Menu size={28} />
+            </button>
+          </div>
         </div>
       </header>
 

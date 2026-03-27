@@ -42,12 +42,12 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="w-[120vw] max-w-[120vw] md:w-full md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
+          className="w-[180vw] max-w-[180vw] min-w-[180vw] md:min-w-0 md:w-full md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
         >
           <img 
             src={`${import.meta.env.BASE_URL}assets/LOGO ACTIVE SEM FUNDO.png`} 
             alt="ACTIVE Logo" 
-            className="w-full h-auto max-h-[35vh] md:max-h-[40vh] object-contain drop-shadow-2xl brightness-150 transform scale-[1.1] md:scale-100"
+            className="w-full h-auto max-h-[50vh] md:max-h-[40vh] object-contain drop-shadow-2xl brightness-150 transform scale-[1.4] md:scale-100"
           />
         </motion.div>
 
