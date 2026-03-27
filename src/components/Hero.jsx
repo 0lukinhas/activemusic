@@ -25,13 +25,13 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 mt-10 md:mt-20 flex flex-col justify-center items-start">
+      <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 flex flex-col justify-center items-center text-center">
         {/* Subtitle */}
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-electric font-sans font-bold tracking-[0.3em] lg:tracking-[0.5em] uppercase text-sm md:text-xl lg:text-2xl mb-4 md:mb-12 ml-2 drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+          className="text-electric font-sans font-bold tracking-[0.2em] md:tracking-[0.4em] uppercase text-xs md:text-xl mb-6 relative z-50 drop-shadow-[0_0_10px_rgba(255,215,0,0.8)]"
         >
           DJ / PRODUTOR BRASILEIRO
         </motion.p>
@@ -41,12 +41,12 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="w-full max-w-[90vw] md:max-w-4xl lg:max-w-[1000px] mb-6 md:mb-12 flex justify-start"
+          className="w-full max-w-[85vw] md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
         >
           <img 
             src="/activemusic/assets/LOGO ACTIVE SEM FUNDO.png" 
             alt="ACTIVE Logo" 
-            className="w-[120%] md:w-full h-auto object-contain object-left drop-shadow-2xl brightness-150 transform scale-[1.3] md:scale-100 origin-left"
+            className="w-full h-auto max-h-[25vh] md:max-h-[35vh] object-contain drop-shadow-2xl brightness-150"
           />
         </motion.div>
 
@@ -55,7 +55,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-6 md:mt-12"
+          className="mt-6 md:mt-12 relative z-50"
         >
           <a
             href="#soundcloud"
