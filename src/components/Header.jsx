@@ -12,7 +12,7 @@ const Header = () => {
           <a href="#" className="relative group flex items-center gap-2">
             {/* Invert logo so it's visible on dark bg */}
             <img 
-              src="/activemusic/assets/LOGO A NOVO BRANCO SEM FUNDO.png" 
+              src={`${import.meta.env.BASE_URL}assets/LOGO A NOVO BRANCO SEM FUNDO.png`} 
               alt="ACTIVE Logo" 
               className="h-10 transition-transform duration-500 group-hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] group-hover:scale-105"
             />
@@ -102,7 +102,7 @@ const Header = () => {
               animate={{ opacity: 0.8 }}
               className="absolute bottom-10 inset-x-0 flex justify-center pointer-events-none"
             >
-              <img src="/activemusic/assets/LOGO A NOVO BRANCO SEM FUNDO.png" alt="" className="h-20" />
+              <img src={`${import.meta.env.BASE_URL}assets/LOGO A NOVO BRANCO SEM FUNDO.png`} alt="" className="h-20" />
             </motion.div>
           </motion.div>
         )}

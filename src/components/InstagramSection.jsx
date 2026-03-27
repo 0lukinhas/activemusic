@@ -61,7 +61,7 @@ const InstagramSection = () => {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
-                style={{ backgroundImage: `url('/activemusic/assets/${post.img}')` }}
+                style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/${post.img}')` }}
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="text-electric"><path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm2 14.121v-8.242l7.139 4.121L14 16.121zM9.99 16.12L2.852 12l7.139-4.121v8.24h-.001z"/></svg>

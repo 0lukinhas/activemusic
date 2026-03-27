@@ -4,7 +4,7 @@ const LiquidMetalBg = () => {
   return (
     <div className="fixed inset-0 w-full h-full z-[-2] pointer-events-none overflow-hidden bg-black">
       {/* Fallback pattern for deeper texture */}
-      <div className="absolute inset-0 bg-[url('/activemusic/assets/liquid-metal.png')] bg-cover bg-center opacity-10 mix-blend-color-dodge animate-subtle-float"></div>
+      <div className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-color-dodge animate-subtle-float" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/liquid-metal.png')` }}></div>
       
       {/* High-def logo video as a kinetic background */}
       <video
@@ -14,7 +14,7 @@ const LiquidMetalBg = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-20 filter contrast-125 grayscale mix-blend-screen"
       >
-        <source src="/activemusic/assets/logo-video.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}assets/logo-video.mp4`} type="video/mp4" />
       </video>
 
       {/* Vignette mask to keep edges dark and text legible */}

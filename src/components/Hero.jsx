@@ -15,7 +15,8 @@ const Hero = () => {
         <motion.div 
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="w-full h-full bg-[url('/activemusic/assets/hero-bg.jpg')] bg-cover bg-center md:bg-top filter-cyber-dark object-cover"
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}assets/hero-bg.jpg')` }}
+          className="w-full h-full bg-cover bg-center md:bg-top filter-cyber-dark object-cover"
         />
         {/* CRT Scanline Overlay - Fixed for Mobile Compositing */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0)_50%,rgba(0,0,0,0.6)_50%)] bg-[length:100%_4px] pointer-events-none z-10 opacity-40" />
@@ -44,7 +45,7 @@ const Hero = () => {
           className="w-[120vw] max-w-[120vw] md:w-full md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
         >
           <img 
-            src="/activemusic/assets/LOGO ACTIVE SEM FUNDO.png" 
+            src={`${import.meta.env.BASE_URL}assets/LOGO ACTIVE SEM FUNDO.png`} 
             alt="ACTIVE Logo" 
             className="w-full h-auto max-h-[35vh] md:max-h-[40vh] object-contain drop-shadow-2xl brightness-150 transform scale-[1.1] md:scale-100"
           />

@@ -20,7 +20,7 @@ const Sobre = () => {
           className="w-full lg:w-[45%] relative z-10"
         >
           <div className="aspect-[3/4] w-full bg-zinc-900 relative">
-             <img src="/activemusic/assets/sobre-bg.jpg" alt="Active Profile" className="w-full h-full object-cover filter-cyber-dark z-10 relative" />
+             <img src={`${import.meta.env.BASE_URL}assets/sobre-bg.jpg`} alt="Active Profile" className="w-full h-full object-cover filter-cyber-dark z-10 relative" />
              {/* Decorator Box */}
              <div className="absolute -inset-4 border border-electric/30 -z-10 translate-x-4 translate-y-4"></div>
           </div>
