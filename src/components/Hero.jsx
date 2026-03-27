@@ -41,12 +41,12 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="w-full max-w-[85vw] md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
+          className="w-[120vw] max-w-[120vw] md:w-full md:max-w-4xl lg:max-w-[1000px] mb-8 md:mb-12 flex justify-center"
         >
           <img 
             src="/activemusic/assets/LOGO ACTIVE SEM FUNDO.png" 
             alt="ACTIVE Logo" 
-            className="w-full h-auto max-h-[25vh] md:max-h-[35vh] object-contain drop-shadow-2xl brightness-150"
+            className="w-full h-auto max-h-[35vh] md:max-h-[40vh] object-contain drop-shadow-2xl brightness-150 transform scale-[1.1] md:scale-100"
           />
         </motion.div>
 
@@ -65,17 +65,18 @@ const Hero = () => {
             OUÇA AGORA
           </a>
         </motion.div>
+
+        {/* Scroll Indicator Inside Stack */}
+        <motion.div 
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="mt-16 md:absolute md:bottom-10 flex flex-col items-center gap-2 opacity-50"
+        >
+          <span className="text-[10px] tracking-widest font-display text-electric uppercase">Deslize</span>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-electric to-transparent" />
+        </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 z-10"
-      >
-        <span className="text-[10px] tracking-widest font-display text-electric uppercase">Deslize</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-electric to-transparent" />
-      </motion.div>
     </section>
   );
 };
