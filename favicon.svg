@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <filter id="invert">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" />
+  </filter>
+  <rect width="64" height="64" fill="black" />
+  <image href="/assets/logo-preto.png" width="50" height="50" x="7" y="7" filter="url(#invert)" preserveAspectRatio="xMidYMid meet" />
+</svg>
