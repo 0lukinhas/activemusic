@@ -31,7 +31,7 @@ const App = () => {
       
       <footer className="w-full py-24 border-t border-zinc-900 bg-black flex flex-col items-center justify-center gap-10 relative z-10">
         <img src="/activemusic/assets/LOGO A NOVO BRANCO SEM FUNDO.png" alt="" className="h-28 opacity-60" />
-        <p className="font-sans text-zinc-600 text-sm tracking-widest mt-8">© 2026 ACTIVE PSY TRANCE. ALL RIGHTS RESERVED.</p>
+        <p className="font-sans text-zinc-600 text-sm tracking-widest mt-8 text-center px-6">© 2026 ACTIVE PSY TRANCE. ALL RIGHTS RESERVED.</p>
       </footer>
     </div>
   );
