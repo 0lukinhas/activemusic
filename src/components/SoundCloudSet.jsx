@@ -60,7 +60,7 @@ const SoundCloudSet = () => {
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337580634&color=%23ffd700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/activecontato/set-2017-progtrance-freedownload&color=%23ffd700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
               className="w-full h-full object-cover filter contrast-125 saturate-50 hover:saturate-100 transition-all duration-700"
             ></iframe>
           </div>
